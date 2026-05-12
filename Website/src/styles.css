@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1B3A2A;
+  --color-accent: #B87333;
+  --color-surface: #FAF8F5;
+  --color-text: #1A1A1A;
+  --color-muted: #5A6B5A;
+  --font-display: Georgia, serif;
+  --font-body: system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
