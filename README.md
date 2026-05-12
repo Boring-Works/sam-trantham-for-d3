@@ -1,24 +1,17 @@
-# Sam Trantham Campaign Notes
+# Samantha Trantham Campaign
 
-## Status
+A campaign website and messaging strategy for Samantha Trantham, running for Polk County District 3 Commissioner.
 
-- **Implementation level:** Campaign strategy/content notes plus a `Website/` folder.
-- **Deploy state:** Unknown from this directory. No deployment state has been verified here.
-- **GitHub:** Candidate for private archive if the campaign materials should be preserved remotely.
-- **Disposition:** Preserve as campaign content/reference material until the actual site state is verified.
+## Current State
+In Progress — The repository contains campaign messaging/strategy documentation and a local TanStack Start web application. It is not yet verified as live or deployed.
 
-## What This Is
+## Tech Stack
+TypeScript, React 19, TanStack Start, Tailwind CSS v4, Vite, Cloudflare Workers
 
-Campaign website copy, messaging strategy, and Boring Stack Profile D notes for Samantha Trantham campaign work.
+## Key Dependencies
+react, react-dom, @tanstack/react-start, @tanstack/react-router, @cloudflare/vite-plugin
 
-The directory was renamed to `sam-trantham-campaign` because the content is campaign-specific and not a generic `Sam` project.
-
-## Contents
-
-- `trantham-campaignl.md` - campaign story, strategy, site sections, and copy.
-- `PROFILE-D.md` - static/marketing stack profile notes.
-- `Website/` - possible site assets or implementation folder. Review before deployment claims.
-
-## Notes
-
-Do not assume this is live. Verify domain, deployment target, and repository history before making public campaign claims.
+## Commands
+Dev: cd Website && pnpm dev
+Build: cd Website && pnpm build
+Deploy: cd Website && pnpm deploy
