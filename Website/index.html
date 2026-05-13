@@ -16,9 +16,27 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://www.clevelandstatecc.edu/wp-content/uploads/2026/02/Samantha-Trantham-1080x675.jpg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Trantham D3">
+    <link rel="apple-touch-icon" href="/logo192.png">
+    <meta name="theme-color" content="#1B3A2A">
+    <meta name="color-scheme" content="light">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="preload" as="image" href="https://www.clevelandstatecc.edu/wp-content/uploads/2026/02/Samantha-Trantham-1080x675.jpg" fetchpriority="high">
+    <!-- CF_ANALYTICS_PLACEHOLDER: Replace data-cf-beacon token value from Cloudflare dashboard -> Web Analytics -->
+    <!-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"YOUR_TOKEN_HERE"}'></script> -->
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/app.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .catch(function() { /* SW registration failed silently */ });
+        });
+      }
+    </script>
   </body>
 </html>

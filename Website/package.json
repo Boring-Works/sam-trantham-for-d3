@@ -13,14 +13,14 @@
     "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
-    "@cloudflare/vite-plugin": "^1.26.0",
+    "@cloudflare/vite-plugin": "^1.36.0",
     "@tanstack/react-devtools": "latest",
     "@tanstack/react-router": "1.169.2",
     "@tanstack/react-router-devtools": "1.166.13",
     "@tanstack/react-router-ssr-query": "1.166.12",
     "@tanstack/react-start": "1.167.65",
     "@tanstack/router-plugin": "^1.167.35",
-    "lucide-react": "^0.545.0",
+    "lucide-react": "^1.14.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
@@ -34,17 +34,19 @@
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^6.0.1",
-    "jsdom": "^28.1.0",
+    "jsdom": "^29.0.0",
     "tailwindcss": "^4.1.18",
     "typescript": "^6.0.2",
     "vite": "^8.0.0",
     "vitest": "^4.1.5",
-    "wrangler": "^4.70.0"
+    "wrangler": "^4.90.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
-      "lightningcss"
+      "lightningcss",
+      "workerd",
+      "sharp"
     ]
   }
 }

@@ -42,3 +42,59 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
 }
+
+/* Scroll reveal animation system */
+[data-animate] {
+  opacity: 0;
+  translate: 0 1.5rem;
+  transition: opacity 0.6s ease, translate 0.6s ease;
+}
+
+[data-animate].in-view {
+  opacity: 1;
+  translate: 0 0;
+}
+
+/* Staggered delay variants */
+[data-animate][data-delay="1"] { transition-delay: 0.1s; }
+[data-animate][data-delay="2"] { transition-delay: 0.2s; }
+[data-animate][data-delay="3"] { transition-delay: 0.3s; }
+[data-animate][data-delay="4"] { transition-delay: 0.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-animate] {
+    opacity: 1;
+    translate: 0 0;
+    transition: none;
+    transition-delay: 0s;
+  }
+}
+
+/* Performance: defer rendering of off-screen sections */
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 600px;
+}
+
+/* Skip link for keyboard/screen reader navigation */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-accent);
+  color: white;
+  font-weight: bold;
+  z-index: 9999;
+  outline: 3px solid var(--color-primary);
+}

@@ -7,7 +7,7 @@ export function HerStory() {
 
         <div className="space-y-6 text-lg leading-relaxed">
           <p>
-            Samantha Trantham graduated from Copper Basin High School at 17 in a class of 54 students. She went to Cleveland State Community College, then to Middle Tennessee State University, where she earned her Bachelor of Science in Healthcare Professional Studies. She studied science and public health because she's always cared about what keeps a community healthy and safe.
+            Samantha Trantham graduated from Copper Basin High School at 17 in a class of 54 students. She went to Cleveland State Community College, then to Middle Tennessee State University, where she earned her Bachelor of Science in Healthcare Professional Studies. She studied science and public health because she's always cared about what keeps a community healthy and safe. She went on to pursue a master's degree in public health.
           </p>
 
           <p>

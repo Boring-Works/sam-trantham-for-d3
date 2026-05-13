@@ -2,8 +2,8 @@
 export function WhyRunning() {
   return (
     <section className="bg-primary text-surface px-6 py-20 md:py-32">
-      <div className="max-w-3xl mx-auto pl-8 md:pl-16 border-l-4 border-accent relative">
-        <div className="absolute -left-12 top-0 text-accent opacity-20 text-9xl font-display leading-none">"</div>
+      <div className="max-w-3xl mx-auto pl-8 md:pl-16 border-l-4 border-accent">
+        <div className="text-accent/20 text-8xl font-display leading-none mb-2 select-none">"</div>
 
         <h2 className="text-4xl md:text-5xl font-display mb-10">There's More Work to Do</h2>
 
