@@ -70,8 +70,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Performance: defer rendering of off-screen sections */
-section {
+/* Performance: defer rendering of off-screen sections (exclude first/hero) */
+section + section {
   content-visibility: auto;
   contain-intrinsic-size: 0 600px;
 }
