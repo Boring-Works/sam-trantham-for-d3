@@ -1,8 +1,7 @@
-import * as React from 'react'
 
 export function StandsFor() {
   return (
-    <section className="bg-primary text-surface px-6 py-20 md:py-32">
+    <section id="record" className="bg-primary text-surface px-6 py-20 md:py-32">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-display mb-12 text-center text-accent">What She Stands For</h2>
 

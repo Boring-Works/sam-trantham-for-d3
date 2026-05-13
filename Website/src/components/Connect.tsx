@@ -1,8 +1,7 @@
-import * as React from 'react'
 
 export function Connect() {
   return (
-    <section className="bg-surface text-text px-6 py-20 md:py-32">
+    <section id="connect" className="bg-surface text-text px-6 py-20 md:py-32">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-display mb-6 text-primary">I'm Always Available</h2>
         <p className="text-xl md:text-2xl mb-12 opacity-80">

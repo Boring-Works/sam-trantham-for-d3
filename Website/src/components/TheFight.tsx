@@ -1,8 +1,7 @@
-import * as React from 'react'
 
 export function TheFight() {
   return (
-    <section className="bg-surface text-text px-6 py-20 md:py-32 relative">
+    <section id="fight" className="bg-surface text-text px-6 py-20 md:py-32 relative">
       <div className="absolute left-0 top-0 bottom-0 w-4 md:w-8 bg-accent"></div>
 
       <div className="max-w-3xl mx-auto pl-8 md:pl-16">

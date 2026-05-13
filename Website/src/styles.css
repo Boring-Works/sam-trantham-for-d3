@@ -6,12 +6,17 @@
   --color-surface: #FAF8F5;
   --color-text: #1A1A1A;
   --color-muted: #5A6B5A;
-  --font-display: Georgia, serif;
-  --font-body: system-ui, sans-serif;
+  --font-display: 'Libre Baskerville', Georgia, serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
 }
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 html,
@@ -25,6 +30,13 @@ body {
   font-family: var(--font-body);
   color: var(--color-text);
   background-color: var(--color-surface);
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

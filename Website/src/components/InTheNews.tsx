@@ -1,4 +1,3 @@
-import * as React from 'react'
 
 export function InTheNews() {
   const newsItems = [
@@ -41,7 +40,7 @@ export function InTheNews() {
   ];
 
   return (
-    <section className="bg-surface text-text px-6 py-20 md:py-32">
+    <section id="news" className="bg-surface text-text px-6 py-20 md:py-32">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-display mb-4 text-primary text-center">Don't Take Our Word for It</h2>
         <p className="text-xl text-center mb-12 opacity-80">These aren't campaign talking points. Click through and see what the reporters covered.</p>
