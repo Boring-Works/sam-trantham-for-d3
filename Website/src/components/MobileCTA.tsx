@@ -1,6 +1,5 @@
 
-// TODO: Replace FACEBOOK_URL with Sam's actual Facebook page URL once confirmed
-const FACEBOOK_URL = 'https://www.facebook.com'
+const FACEBOOK_URL = 'https://www.facebook.com/samanthatranthamthirddistrictcountycommissioner/'
 
 export function MobileCTA() {
   return (

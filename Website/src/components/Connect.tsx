@@ -20,8 +20,8 @@ export function Connect() {
             samanthatranthamd3commissioner@gmail.com
           </a>
 
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent font-medium underline underline-offset-4 decoration-accent">
-            Samantha Trantham Third District County Commissioner
+          <a href="https://www.facebook.com/samanthatranthamthirddistrictcountycommissioner/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent font-medium underline underline-offset-4 decoration-accent">
+            Samantha Trantham &middot; Third District County Commissioner on Facebook
           </a>
         </div>
       </div>
