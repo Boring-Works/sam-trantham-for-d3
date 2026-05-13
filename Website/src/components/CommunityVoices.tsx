@@ -15,7 +15,7 @@ const TESTIMONIALS: Testimonial[] = [
     quote:
       "She stood up at those commission meetings and fought when nobody else would. The biosolids fight was hard and it lasted two years. She never backed down.",
     name: 'Basin Resident',
-    location: 'McCaysville, GA side',
+    location: 'McCaysville area',
   },
   {
     quote:
@@ -27,12 +27,12 @@ const TESTIMONIALS: Testimonial[] = [
 
 export function CommunityVoices() {
   return (
-    <section id="voices" className="bg-surface text-text px-6 py-20 md:py-32">
+    <section id="voices" className="bg-primary text-surface px-6 py-20 md:py-32">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-display mb-4 text-primary text-center">
+        <h2 className="text-4xl md:text-5xl font-display mb-4 text-center text-accent">
           What the Basin Is Saying
         </h2>
-        <p className="text-center text-muted mb-14 text-lg max-w-xl mx-auto">
+        <p className="text-center opacity-70 mb-14 text-lg max-w-xl mx-auto">
           Real neighbors. Real feedback.
         </p>
 
@@ -41,23 +41,20 @@ export function CommunityVoices() {
             <figure
               key={t.name + t.location}
               data-animate
-              className="bg-primary text-surface p-8 flex flex-col"
+              className="bg-surface text-text p-8 flex flex-col shadow-lg"
             >
               <blockquote className="flex-grow mb-6">
                 <span className="text-accent/30 text-5xl font-display leading-none block mb-2 select-none">"</span>
-                <p className="text-lg leading-relaxed font-display italic">{t.quote}</p>
+                <p className="text-lg leading-relaxed font-display italic text-primary">{t.quote}</p>
               </blockquote>
               <figcaption>
                 <p className="font-bold text-accent text-sm uppercase tracking-wide">{t.name}</p>
-                <p className="text-sm opacity-70">{t.location}</p>
+                <p className="text-sm text-muted">{t.location}</p>
               </figcaption>
             </figure>
           ))}
         </div>
-
-        <p className="text-center text-muted text-sm mt-10 italic">
-          {/* TODO: Replace placeholder quotes with named supporters once Sam collects written permission */}
-        </p>
+        {/* TODO: Replace anonymous placeholders with named supporters (written permission required) */}
       </div>
     </section>
   )

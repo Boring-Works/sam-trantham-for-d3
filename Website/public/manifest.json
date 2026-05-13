@@ -21,17 +21,10 @@
   ],
   "shortcuts": [
     {
-      "name": "Call Samantha",
-      "short_name": "Call",
-      "description": "Call Commissioner Trantham directly",
-      "url": "tel:7068516623",
-      "icons": [{ "src": "/logo192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "Facebook Page",
-      "short_name": "Facebook",
-      "description": "Samantha Trantham on Facebook",
-      "url": "https://www.facebook.com/samanthatranthamthirddistrictcountycommissioner/",
+      "name": "Get Involved",
+      "short_name": "Connect",
+      "description": "Contact Samantha or volunteer",
+      "url": "/#connect",
       "icons": [{ "src": "/logo192.png", "sizes": "192x192" }]
     }
   ],

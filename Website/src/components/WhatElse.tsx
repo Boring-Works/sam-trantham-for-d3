@@ -1,6 +1,6 @@
 export function WhatElse() {
   return (
-    <section className="bg-primary text-surface px-6 py-20 md:py-32">
+    <section id="record-detail" className="bg-primary text-surface px-6 py-20 md:py-32">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-display mb-12 text-center text-accent">Every Meeting. Every Issue. Every Time.</h2>
 

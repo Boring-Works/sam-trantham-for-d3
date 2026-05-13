@@ -5,7 +5,7 @@ export function MobileCTA() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden flex border-t-2 border-accent shadow-lg">
       <a
-        href="tel:7068516623"
+        href="tel:+17068516623"
         className="flex-1 bg-primary text-surface py-4 text-center text-sm font-bold uppercase tracking-wider hover:bg-accent transition-colors"
       >
         Call Samantha

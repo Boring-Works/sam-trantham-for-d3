@@ -40,6 +40,9 @@ export function Hero() {
           <p className="text-2xl md:text-3xl font-display italic text-accent mb-6 leading-snug">
             "A Voice for the Copper Basin"
           </p>
+          <p className="text-accent text-sm font-bold uppercase tracking-widest mb-3">
+            August 6, 2026 · Republican Primary · Polk County
+          </p>
           <p className="text-lg md:text-xl max-w-md mb-10 opacity-90 leading-relaxed">
             She fought for two years to stop the biosolids dumping in her community. She won. Now she's running for her third term, because there's more to protect and more to build.
           </p>
@@ -56,7 +59,7 @@ export function Hero() {
           <img
             src="https://www.clevelandstatecc.edu/wp-content/uploads/2026/02/Samantha-Trantham-1080x675.jpg"
             alt="Samantha Trantham, Polk County District 3 Commissioner"
-            className="absolute inset-0 w-full h-full object-cover object-top"
+            className="absolute inset-0 w-full h-full object-cover object-[center_20%]"
             loading="eager"
             fetchPriority="high"
           />

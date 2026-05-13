@@ -23,8 +23,7 @@ export function Footer() {
             Copper Basin
           </p>
           <p className="text-xs opacity-50 leading-relaxed">
-            Running for her third term in the<br />
-            August 6, 2026 Republican Primary.
+            Running for her third term · August 6, 2026 Primary.
           </p>
         </div>
 
@@ -51,7 +50,7 @@ export function Footer() {
           <ul className="space-y-3">
             <li>
               <a
-                href="tel:7068516623"
+                href="tel:+17068516623"
                 className="text-sm opacity-70 hover:opacity-100 hover:text-accent transition-colors"
               >
                 (706) 851-6623

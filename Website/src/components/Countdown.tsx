@@ -16,7 +16,7 @@ export function Countdown() {
     return (
       <div className="bg-primary text-white py-3 px-6 text-center">
         <p className="text-sm md:text-base font-bold">
-          Today is Election Day &mdash; Go Vote for Samantha Trantham, District 3 Commissioner!
+          Today is Election Day  · Go Vote for Samantha Trantham, District 3 Commissioner!
         </p>
       </div>
     )
@@ -25,7 +25,7 @@ export function Countdown() {
   return (
     <div className="bg-accent text-white py-2.5 px-6 text-center">
       <p className="text-sm md:text-base font-medium">
-        <span className="font-bold">{days} days</span> until the August 6 Primary &mdash; Vote Samantha Trantham, District 3 Commissioner
+        <span className="font-bold">{days} days</span> until the August 6 Primary  · Vote Samantha Trantham, District 3 Commissioner
       </p>
     </div>
   )

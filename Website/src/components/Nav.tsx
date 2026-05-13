@@ -2,9 +2,10 @@ import { useState } from 'react'
 
 const NAV_LINKS = [
   { label: 'Her Story', href: '#story' },
-  { label: 'Her Record', href: '#record' },
+  { label: 'What She Stands For', href: '#record' },
   { label: 'The Fight', href: '#fight' },
   { label: 'In the News', href: '#news' },
+  { label: 'Voices', href: '#voices' },
   { label: 'Connect', href: '#connect' },
 ]
 
@@ -15,13 +16,13 @@ export function Nav() {
     <nav className="sticky top-0 z-50 bg-primary text-surface shadow-lg">
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
         <a
-          href="#"
-          className="font-display text-lg md:text-xl font-bold tracking-wide hover:text-accent transition-colors"
+          href="/"
+          className="font-display text-lg md:text-xl font-bold tracking-wide hover:text-accent transition-colors whitespace-nowrap"
         >
           Trantham <span className="text-accent font-normal">·</span> District 3
         </a>
 
-        <ul className="hidden md:flex items-center space-x-8">
+        <ul className="hidden md:flex items-center space-x-6">
           {NAV_LINKS.map(({ label, href }) => (
             <li key={href}>
               <a

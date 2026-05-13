@@ -70,7 +70,7 @@ export function Connect() {
             <h3 className="text-2xl font-display mb-6 text-primary">Reach Out</h3>
             <div className="flex flex-col gap-4">
               <a
-                href="tel:7068516623"
+                href="tel:+17068516623"
                 className="bg-primary text-surface px-8 py-4 text-lg font-bold uppercase tracking-wide hover:opacity-90 transition-opacity flex items-center justify-center gap-3 w-full"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -113,6 +113,11 @@ export function Connect() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4">
+                {status === 'error' && (
+                  <p className="text-sm text-accent border border-accent/30 px-4 py-3 bg-accent/5">
+                    Form couldn't send — your email client opened as a backup. Or call Samantha directly at (706) 851-6623.
+                  </p>
+                )}
                 <div>
                   <label htmlFor="volunteer-name" className="block text-sm font-bold uppercase tracking-wide text-primary mb-1">
                     Name <span aria-hidden="true">*</span>

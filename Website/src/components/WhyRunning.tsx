@@ -1,7 +1,7 @@
 
 export function WhyRunning() {
   return (
-    <section className="bg-primary text-surface px-6 py-20 md:py-32">
+    <section id="closing" className="bg-primary text-surface px-6 py-20 md:py-32">
       <div className="max-w-3xl mx-auto pl-8 md:pl-16 border-l-4 border-accent">
         <div className="text-accent/20 text-8xl font-display leading-none mb-2 select-none">"</div>
 
