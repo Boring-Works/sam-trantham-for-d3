@@ -1,60 +1,78 @@
-type Testimonial = {
-  quote: string
-  name: string
-  location: string
-}
+const STATS = [
+  { number: '2', label: 'Terms Elected', detail: '2018 and 2022. Both won.' },
+  { number: '2 yrs', label: 'Fighting to Stop the Dumping', detail: 'Until TDEC confirmed it was over for good.' },
+  { number: '9-0', label: 'Crypto Mining Regulation', detail: 'Passed before it became a problem here.' },
+  { number: '250K+', label: 'Annual Visitors Protected', detail: 'The Ocoee and Hiwassee. The Basin\'s livelihood.' },
+]
 
-const TESTIMONIALS: Testimonial[] = [
-  {
-    quote:
-      "Samantha actually answers when you call her. I had a question about a road issue near my property and she called me back the same day. That's not something you expect from an elected official.",
-    name: 'Basin Resident',
-    location: 'Copperhill, TN',
-  },
-  {
-    quote:
-      "She stood up at those commission meetings and fought when nobody else would. The biosolids fight was hard and it lasted two years. She never backed down.",
-    name: 'Basin Resident',
-    location: 'McCaysville area',
-  },
-  {
-    quote:
-      "I've watched Samantha at community events for years. She's not just showing up for votes. She genuinely cares about this place and the people in it.",
-    name: 'Copper Basin Neighbor',
-    location: 'Polk County, TN',
-  },
+const OUTLETS = [
+  'NewsChannel 9',
+  'WDEF News 12',
+  'Fox Chattanooga',
+  'Chattanoogan.com',
 ]
 
 export function CommunityVoices() {
   return (
     <section id="voices" className="bg-primary text-surface px-6 py-20 md:py-32">
       <div className="max-w-6xl mx-auto">
+
         <h2 className="text-4xl md:text-5xl font-display mb-4 text-center text-accent">
-          What the Basin Is Saying
+          The Record Speaks for Itself
         </h2>
-        <p className="text-center opacity-70 mb-14 text-lg max-w-xl mx-auto">
-          Real neighbors. Real feedback.
+        <p className="text-center opacity-70 mb-16 text-lg max-w-2xl mx-auto">
+          Two terms. Dozens of commission meetings. A two-year environmental fight that reached the U.S. Senate floor. These are the numbers.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {TESTIMONIALS.map((t) => (
-            <figure
-              key={t.name + t.location}
+        {/* Stats grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+          {STATS.map((stat) => (
+            <div
+              key={stat.label}
               data-animate
-              className="bg-surface text-text p-8 flex flex-col shadow-lg"
+              className="border border-accent/30 p-6 text-center"
             >
-              <blockquote className="flex-grow mb-6">
-                <span className="text-accent/30 text-5xl font-display leading-none block mb-2 select-none">"</span>
-                <p className="text-lg leading-relaxed font-display italic text-primary">{t.quote}</p>
-              </blockquote>
-              <figcaption>
-                <p className="font-bold text-accent text-sm uppercase tracking-wide">{t.name}</p>
-                <p className="text-sm text-muted">{t.location}</p>
-              </figcaption>
-            </figure>
+              <p className="text-4xl md:text-5xl font-display font-bold text-accent mb-2">
+                {stat.number}
+              </p>
+              <p className="text-sm font-bold uppercase tracking-wide mb-2">{stat.label}</p>
+              <p className="text-xs opacity-60 leading-relaxed">{stat.detail}</p>
+            </div>
           ))}
         </div>
-        {/* TODO: Replace anonymous placeholders with named supporters (written permission required) */}
+
+        {/* Senator Hagerty acknowledgment */}
+        <div className="max-w-3xl mx-auto mb-14">
+          <blockquote className="border-l-4 border-accent pl-6 py-2">
+            <p className="text-xl md:text-2xl font-display italic opacity-90 mb-3">
+              "Tracking it closely."
+            </p>
+            <footer className="text-sm font-bold text-accent uppercase tracking-wide">
+              U.S. Senator Bill Hagerty, on the Copper Basin biosolids fight &bull; June 2023
+            </footer>
+          </blockquote>
+        </div>
+
+        {/* Press recognition */}
+        <div className="text-center">
+          <p className="text-sm font-bold uppercase tracking-widest opacity-50 mb-4">
+            Covered and Verified By
+          </p>
+          <div className="flex flex-wrap justify-center gap-6 md:gap-10">
+            {OUTLETS.map((outlet) => (
+              <span
+                key={outlet}
+                className="text-lg font-display font-bold opacity-60"
+              >
+                {outlet}
+              </span>
+            ))}
+          </div>
+          <p className="text-xs opacity-40 mt-4">
+            Cleveland State Community College Alumna Spotlight, February 2026
+          </p>
+        </div>
+
       </div>
     </section>
   )

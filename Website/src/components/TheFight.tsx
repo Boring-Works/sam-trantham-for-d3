@@ -40,10 +40,15 @@ export function TheFight() {
             That day came. Because she didn't quit.
           </p>
 
-          <div className="mt-12 pt-8 border-t border-muted border-opacity-20">
-            <p className="text-sm text-muted">
-              Source notes: NewsChannel 9 (WTVC): May 24, 2023; May 25/26, 2023 (bodycam); June 11, 2023 (town hall); June 29, 2023 (TDEC meeting); April 30, 2024 (stoppage). Fox Chattanooga (April 2024). WDEF (May 2023).
-            </p>
+          <div className="mt-12 pt-6 border-t border-muted/20">
+            <details className="group">
+              <summary className="text-xs text-muted cursor-pointer select-none hover:text-accent transition-colors uppercase tracking-wide">
+                Source references
+              </summary>
+              <p className="text-xs text-muted mt-2 leading-relaxed">
+                NewsChannel 9 (WTVC): May 24, 2023; May 25/26, 2023 (bodycam); June 11, 2023 (town hall); June 29, 2023 (TDEC meeting); April 30, 2024 (stoppage confirmed). Fox Chattanooga (April 2024). WDEF (May 2023).
+              </p>
+            </details>
           </div>
         </div>
       </div>

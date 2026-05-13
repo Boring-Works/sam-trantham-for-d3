@@ -33,6 +33,13 @@ export function StandsFor() {
               She believes that if you're going to hold this office, you'd better show up. Not just at election time. Every meeting. Every time.
             </p>
           </div>
+
+          <div data-animate className="md:col-span-2 pt-4 border-t border-surface/20">
+            <h3 className="text-2xl font-display mb-4">Straight Talk, Always</h3>
+            <p className="text-lg opacity-90 leading-relaxed">
+              She believes in being straightforward and transparent, because the people of the Copper Basin deserve to know exactly where their commissioner stands.
+            </p>
+          </div>
         </div>
 
         <blockquote data-animate className="mt-16 text-center max-w-2xl mx-auto text-xl md:text-2xl font-display italic text-accent">

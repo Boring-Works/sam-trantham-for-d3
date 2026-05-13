@@ -1,6 +1,6 @@
 function ShareButton() {
   const shareData = {
-    title: 'Samantha Trantham — A Voice for the Copper Basin',
+    title: 'Samantha Trantham, A Voice for the Copper Basin',
     text: 'She fought for two years to stop the biosolids dumping in the Copper Basin. She won. Now running for her third term as District 3 Commissioner.',
     url: typeof window !== 'undefined' ? window.location.href : 'https://votetrantham.com',
   }

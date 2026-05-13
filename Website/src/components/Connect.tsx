@@ -44,7 +44,7 @@ export function Connect() {
       setStatus('success')
     } catch {
       // Fallback: open mailto
-      const subject = encodeURIComponent(`${form.howCanHelp} — ${form.name}`)
+      const subject = encodeURIComponent(`${form.howCanHelp} from ${form.name}`)
       const body = encodeURIComponent(
         `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone || 'Not provided'}\nMessage: ${form.howCanHelp}`
       )
@@ -115,7 +115,7 @@ export function Connect() {
               <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4">
                 {status === 'error' && (
                   <p className="text-sm text-accent border border-accent/30 px-4 py-3 bg-accent/5">
-                    Form couldn't send — your email client opened as a backup. Or call Samantha directly at (706) 851-6623.
+                    Form couldn't send. Your email client opened as a backup. Or call Samantha directly at (706) 851-6623.
                   </p>
                 )}
                 <div>
