@@ -1,8 +1,8 @@
 const STATS = [
-  { number: '2', label: 'Terms Elected', detail: '2018 and 2022. Both won outright.' },
-  { number: '2yr', label: 'Fight to Stop the Dumping', detail: 'Until TDEC confirmed it was over for good.' },
-  { number: '9–0', label: 'Crypto Mining Vote', detail: 'Passed unanimously, before it became a problem here.' },
-  { number: '250K', label: 'Annual River Visitors Protected', detail: 'The Ocoee and Hiwassee. The Basin\'s livelihood.' },
+  { number: '250K', label: 'River Visitors a Year', detail: 'The Ocoee is the most rafted river in America. Tourism is the Basin\'s livelihood.' },
+  { number: '83%', label: 'For Trump in 2024', detail: 'Polk County, TN — a deeply conservative district she has won twice.' },
+  { number: '22%', label: 'Of Polk County is 65+', detail: 'Seniors built this place. Sam shows up at the Senior Center.' },
+  { number: '2', label: 'Terms Elected', detail: '2018 and 2022. Both won outright by a community that knows her.' },
 ]
 
 const OUTLETS = [
@@ -24,7 +24,7 @@ export function CommunityVoices() {
           The Record Speaks for Itself
         </h2>
         <p className="text-center opacity-70 mb-16 text-lg max-w-2xl mx-auto">
-          Two terms. Dozens of commission meetings. A two-year environmental fight that reached the U.S. Senate floor.
+          A deeply conservative rural district. A tourism-driven economy. A senior population that built this place. Sam shows up for all of it.
         </p>
 
         {/* Stats grid */}
@@ -36,7 +36,7 @@ export function CommunityVoices() {
               data-delay={String(i + 1)}
               className="border-t-2 border-accent pt-6"
             >
-              <p className="text-6xl md:text-7xl lg:text-8xl font-display font-bold text-accent leading-none mb-3 tracking-tight">
+              <p className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-accent leading-none mb-3 tracking-tight">
                 {stat.number}
               </p>
               <p className="text-xs md:text-sm font-bold uppercase tracking-wider mb-2">{stat.label}</p>
@@ -88,13 +88,13 @@ export function CommunityVoices() {
           </p>
         </div>
 
-        {/* Neighbor voices scaffold — for real local endorsements as they come in */}
+        {/* Neighbor voices scaffold */}
         <div data-animate className="border-t border-surface/15 pt-12 max-w-3xl mx-auto text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-4">
             From the Basin
           </p>
           <p className="text-lg md:text-xl font-display italic opacity-80 leading-snug">
-            Neighbor endorsements from Copperhill, Ducktown, Turtletown, and Reliance will appear here as the campaign collects them. If you want to add your voice,{' '}
+            Neighbor endorsements from Copperhill, Ducktown, Turtletown, Isabella, and Reliance will appear here as the campaign collects them. If you want to add your voice,{' '}
             <a href="#connect" className="text-accent not-italic font-bold hover:underline">
               tell Samantha
             </a>.

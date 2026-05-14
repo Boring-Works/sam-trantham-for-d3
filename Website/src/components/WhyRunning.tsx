@@ -1,18 +1,18 @@
-const THIRD_TERM_PROMISES = [
+const THIRD_TERM_PRIORITIES = [
   {
-    label: 'Infrastructure',
-    title: 'The East Side Gets Real Investment',
-    body: 'Roads, bridges, emergency services, and public facilities in the Basin that match what the west side already has. No more "we\'ll get to it next budget cycle."',
+    label: 'Round Two',
+    title: 'Finish the Biosolids Fight',
+    body: 'The dumping resumed in November 2025. The state has reclassified it as "Exceptional Quality" to skip the rules that worked last time. The smell is back. The trucks are back. This is the first thing she finishes in her next term.',
   },
   {
     label: 'Economy',
     title: 'Protect the Tourism Economy',
-    body: 'The Ocoee, the Hiwassee, the scenic train, and the outfitters and small businesses that depend on them. Tourism is the Basin\'s livelihood. It stays that way.',
+    body: 'The Ocoee is the most rafted river in America. 250,000 visitors a year keep Basin businesses open. Clean water and clean air are not optional — they are the entire economy.',
   },
   {
-    label: 'Next Generation',
-    title: 'Give Young Families a Reason to Stay',
-    body: 'Keep bringing economic development and good jobs to the Basin. Our young people shouldn\'t have to drive to Chattanooga just to make a living.',
+    label: 'Seniors & Families',
+    title: 'Take Care of the People Who Built This Place',
+    body: '22% of Polk County is 65 and over. They built the Basin. They deserve a commissioner who keeps showing up at the Senior Center, the hospital board meetings, and the homes nobody else visits.',
   },
 ]
 
@@ -33,13 +33,13 @@ export function WhyRunning() {
             The Copper Basin sits on the other side of a mountain gorge from the county seat. When decisions get made in Benton, we feel it last and get the least. If we don't have a commissioner who shows up and speaks up, we get forgotten. That's just how it is.
           </p>
           <p>
-            I've spent two terms making sure that doesn't happen. Here's what I'm asking for a third term to finish.
+            I've spent two terms making sure that doesn't happen. The biosolids fight isn't over — it restarted in November 2025. Here's what I'm asking for a third term to finish.
           </p>
         </div>
 
-        {/* Three promise cards */}
+        {/* Three priority cards */}
         <div className="grid md:grid-cols-3 gap-5 mb-14">
-          {THIRD_TERM_PROMISES.map((p, i) => (
+          {THIRD_TERM_PRIORITIES.map((p, i) => (
             <div
               key={p.label}
               data-animate

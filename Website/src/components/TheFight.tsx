@@ -2,22 +2,28 @@ const TIMELINE = [
   {
     date: 'Aug 2022',
     title: 'Trucks Arrive',
-    body: 'Treated sewage waste from Chattanooga and Cobb County, GA starts dumping in the Copper Basin. PFAS detected.',
+    body: 'Treated sewage waste from Chattanooga and Cobb County, GA starts dumping at the Intertrade Holdings / Copperhill Industries site. PFAS detected. The smell hits schools and tourist businesses.',
   },
   {
     date: 'Apr 2023',
     title: 'Resolution Passes',
-    body: 'Polk County commissioners pass a resolution banning the dumping. Nashville agencies say it doesn\'t count.',
+    body: 'Polk County commissioners pass a resolution banning the dumping. TDEC tells them it has "no power" over biosolids.',
   },
   {
     date: 'Jun 2023',
     title: 'Town Hall + Hagerty',
-    body: 'Two-state town hall. U.S. Senator Bill Hagerty says publicly he\'s "tracking it closely."',
+    body: 'Two-state town hall. U.S. Senator Bill Hagerty says publicly he\'s "tracking it closely." Cobb County, GA officials drive up to face Polk residents.',
   },
   {
     date: 'Apr 2024',
-    title: 'It Stops. For Good.',
-    body: 'TDEC confirms the dumping has ended. Final delivery: March 25, 2024.',
+    title: 'Round One — Stopped',
+    body: 'TDEC confirms the dumping has ended. Final delivery: March 25, 2024. TDEC cites pH violations.',
+  },
+  {
+    date: 'Nov 2025',
+    title: 'Round Two — They\'re Back',
+    body: 'Biosolids dumping resumes at the same Copperhill site under a new TDEC classification. The smell returns. So does Samantha.',
+    isCurrent: true,
   },
 ]
 
@@ -28,24 +34,34 @@ export function TheFight() {
 
       <div className="max-w-4xl mx-auto pl-8 md:pl-16">
         <p className="text-accent text-xs font-bold uppercase tracking-[0.2em] mb-3">
-          Two-Year Fight · Won
+          The Fight Isn't Over
         </p>
-        <h2 className="text-4xl md:text-5xl font-display mb-4 text-primary">She Fought for Two Years. She Won.</h2>
+        <h2 className="text-4xl md:text-5xl font-display mb-4 text-primary leading-tight">
+          She Fought for Two Years. She Won. Now They're Back.
+        </h2>
         <p className="text-lg opacity-80 mb-12 max-w-2xl">
-          The biosolids fight is the clearest answer to "what does she actually do?" Here's how it played out.
+          The biosolids fight is the clearest answer to "what does she actually do?" Here's how round one played out — and what happened next.
         </p>
 
-        {/* Visual timeline */}
-        <ol className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16 border-y border-primary/10 py-8">
+        {/* Visual timeline — 5 steps including the November 2025 restart */}
+        <ol className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 mb-16 border-y border-primary/10 py-8">
           {TIMELINE.map((step, i) => (
-            <li key={step.date} data-animate data-delay={String(i + 1)} className="relative">
+            <li
+              key={step.date}
+              data-animate
+              data-delay={String(Math.min(i + 1, 4))}
+              className={`relative ${step.isCurrent ? 'lg:col-span-1' : ''}`}
+            >
               <div className="flex items-center gap-2 mb-3">
-                <span className="block w-3 h-3 rounded-full bg-accent" aria-hidden="true" />
-                <span className="text-xs font-bold uppercase tracking-widest text-accent">
+                <span
+                  className={`block w-3 h-3 rounded-full ${step.isCurrent ? 'bg-primary animate-pulse' : 'bg-accent'}`}
+                  aria-hidden="true"
+                />
+                <span className={`text-xs font-bold uppercase tracking-widest ${step.isCurrent ? 'text-primary' : 'text-accent'}`}>
                   {step.date}
                 </span>
               </div>
-              <h3 className="font-display text-lg text-primary mb-2 leading-tight">{step.title}</h3>
+              <h3 className="font-display text-base md:text-lg text-primary mb-2 leading-tight">{step.title}</h3>
               <p className="text-sm leading-relaxed opacity-80">{step.body}</p>
             </li>
           ))}
@@ -57,7 +73,7 @@ export function TheFight() {
           </p>
 
           <p>
-            Samantha and her fellow commissioners passed a resolution banning the dumping. Government agencies in Nashville told them the resolution didn't count. They'd approved the project as a "pilot program" without even requiring a permit. When commissioners asked where the waste was coming from, they were told to file an open records request.
+            Samantha and her fellow commissioners passed a resolution banning the dumping. State agencies in Nashville told them the resolution didn't count. They'd approved the project as a "pilot program" without even requiring a permit. When commissioners asked where the waste was coming from, they were told to file an open records request.
           </p>
 
           <p>
@@ -65,7 +81,7 @@ export function TheFight() {
           </p>
 
           <p>
-            Samantha didn't stop. She confirmed to NewsChannel 9 that Georgia and Tennessee regulators were both investigating. She helped organize a town hall in June 2023 that brought together officials from two states. She went back to every commission meeting. She kept talking to every reporter who would listen. She kept demanding transparency from agencies that didn't want to give it.
+            Samantha didn't stop. She confirmed to NewsChannel 9 that Georgia and Tennessee regulators were both investigating. She helped organize a two-state town hall in June 2023. She went back to every commission meeting. She kept talking to every reporter who would listen. She kept demanding transparency from agencies that didn't want to give it.
           </p>
 
           <p>
@@ -73,24 +89,40 @@ export function TheFight() {
           </p>
 
           <p>
-            By April 2024, it was over. TDEC confirmed the dumping had stopped permanently. The last delivery was March 25, 2024. TDEC had found pH level violations in the biosolids.
+            By April 2024, round one was over. TDEC confirmed the dumping had stopped. The last delivery was March 25, 2024. TDEC had found pH violations.
           </p>
 
+          {/* Samantha's prophetic 2024 quote — what she said when the dumping "ended" */}
           <blockquote className="border-l-4 border-accent pl-6 py-2 my-8 text-xl font-display text-primary italic">
-            "The biosolids application has wreaked havoc on our businesses, schools, and community. I look forward to the day TDEC confirms that it will no longer be an issue for the community I proudly represent."
+            "Our community is awaiting transparency from TDEC and the company owner, Byron 'Buddy' Haynes, verifying the unequivocal and permanent stoppage of transportation and biosolids application on the Intertrade Holdings/Copperhill Industries site."
+            <footer className="not-italic font-body text-sm text-accent uppercase tracking-wide mt-3 opacity-90">
+              — Samantha Trantham, April 2024
+            </footer>
           </blockquote>
 
-          <p className="font-bold text-xl">
-            That day came. Because she didn't quit.
+          <p>
+            She used the words "unequivocal" and "permanent" on purpose. She knew the agreement was fragile. She said so out loud, on the record.
           </p>
 
-          {/* Why this matters — connects the fight to voter's daily life */}
+          <p className="font-bold text-xl text-primary">
+            In late November 2025, the dumping resumed.
+          </p>
+
+          <p>
+            This time the state has reclassified the same biosolids as "Exceptional Quality" — exempt from the rules that worked the last time. The smell is back. The trucks are back. The route Samantha and her neighbors fought for two years to close has been reopened.
+          </p>
+
+          <p className="text-xl font-display text-primary border-t border-primary/10 pt-6">
+            She is not letting them have this town again.
+          </p>
+
+          {/* Why this matters — connects fight to voter's daily life */}
           <div className="mt-12 bg-primary/5 border-l-4 border-accent p-6 md:p-8">
             <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">
-              Why This Matters for Your Family
+              Why This Matters Right Now
             </p>
             <p className="text-base md:text-lg leading-relaxed text-primary">
-              PFAS doesn't break down. It gets into groundwater, livestock, and the food your grandkids eat. The biosolids the state approved for the Copper Basin contained the "forever chemicals" linked to cancer. If Samantha had taken "no" for an answer, those trucks would still be coming. The fact that they're not — that's a direct result of someone in this office who refused to quit.
+              PFAS doesn't break down. It gets into groundwater, livestock, and the food your grandkids eat. The Ocoee and Hiwassee bring 250,000+ visitors a year to the Basin — the river economy is what keeps your neighbors employed. If the smell drives tourists away, the rafting outfitters, restaurants, gas stations, and motels all feel it. This isn't an abstract environmental fight. It's about whether Polk County families still have a place to work next year.
             </p>
           </div>
 
@@ -100,7 +132,7 @@ export function TheFight() {
                 Source references
               </summary>
               <p className="text-xs text-muted mt-2 leading-relaxed">
-                NewsChannel 9 (WTVC): May 24, 2023; May 25/26, 2023 (bodycam); June 11, 2023 (town hall); June 29, 2023 (TDEC meeting); April 30, 2024 (stoppage confirmed). Fox Chattanooga (April 2024). WDEF (May 2023).
+                NewsChannel 9 (WTVC): May 24, 2023; May 25/26, 2023 (bodycam); June 11, 2023 (town hall); June 29, 2023 (TDEC meeting); April 30, 2024 (round one stoppage). WDEF: May 2023. November 2025 restart confirmed by the official Tennessee Department of Environment and Conservation Copper Basin Mining District remediation page (tn.gov/environment).
               </p>
             </details>
           </div>
