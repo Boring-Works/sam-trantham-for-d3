@@ -17,13 +17,14 @@ export function Footer() {
         {/* Column 1: Candidate info */}
         <div>
           <h3 className="font-display text-xl mb-3 text-accent">Samantha Trantham</h3>
-          <p className="opacity-80 text-sm leading-relaxed mb-4">
-            District 3 County Commissioner<br />
-            Polk County, Tennessee<br />
-            Copper Basin
+          <p className="opacity-85 text-sm leading-relaxed mb-4">
+            Republican Candidate<br />
+            Polk County Commission, District 3<br />
+            Copper Basin, Tennessee
           </p>
-          <p className="text-xs opacity-50 leading-relaxed">
-            Running for her third term · August 6, 2026 Primary.
+          <p className="text-xs opacity-60 leading-relaxed">
+            Two-term incumbent. Running for her third term in the{' '}
+            <strong className="text-accent/90">Thursday, August 6, 2026 Republican Primary</strong>.
           </p>
         </div>
 
@@ -44,14 +45,14 @@ export function Footer() {
           </ul>
         </nav>
 
-        {/* Column 3: Contact */}
+        {/* Column 3: Reach Samantha */}
         <div>
           <h3 className="font-display text-xl mb-3 text-accent">Reach Samantha</h3>
           <ul className="space-y-3">
             <li>
               <a
                 href="tel:+17068516623"
-                className="text-sm opacity-70 hover:opacity-100 hover:text-accent transition-colors"
+                className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-colors"
               >
                 (706) 851-6623
               </a>
@@ -59,9 +60,9 @@ export function Footer() {
             <li>
               <a
                 href="mailto:samanthatranthamd3commissioner@gmail.com"
-                className="text-sm opacity-70 hover:opacity-100 hover:text-accent transition-colors break-all"
+                className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-colors break-all"
               >
-                samanthatranthamd3commissioner<br />@gmail.com
+                samanthatranthamd3commissioner<wbr />@gmail.com
               </a>
             </li>
             <li>
@@ -69,9 +70,9 @@ export function Footer() {
                 href="https://www.facebook.com/samanthatranthamthirddistrictcountycommissioner/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm opacity-70 hover:opacity-100 hover:text-accent transition-colors"
+                className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-colors"
               >
-                Facebook
+                Facebook · Commissioner Page
               </a>
             </li>
           </ul>
@@ -80,11 +81,11 @@ export function Footer() {
       </div>
 
       <div className="border-t border-surface/10">
-        <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs opacity-50 uppercase tracking-widest text-center md:text-left">
+        <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
+          <p className="text-xs opacity-70 uppercase tracking-widest text-center md:text-left">
             Paid for by Samantha Trantham for Polk County Commission District 3
           </p>
-          <p className="text-xs opacity-40">
+          <p className="text-xs opacity-50">
             &copy; {CURRENT_YEAR} · Polk County, TN
           </p>
         </div>

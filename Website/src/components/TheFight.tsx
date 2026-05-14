@@ -84,6 +84,16 @@ export function TheFight() {
             That day came. Because she didn't quit.
           </p>
 
+          {/* Why this matters — connects the fight to voter's daily life */}
+          <div className="mt-12 bg-primary/5 border-l-4 border-accent p-6 md:p-8">
+            <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">
+              Why This Matters for Your Family
+            </p>
+            <p className="text-base md:text-lg leading-relaxed text-primary">
+              PFAS doesn't break down. It gets into groundwater, livestock, and the food your grandkids eat. The biosolids the state approved for the Copper Basin contained the "forever chemicals" linked to cancer. If Samantha had taken "no" for an answer, those trucks would still be coming. The fact that they're not — that's a direct result of someone in this office who refused to quit.
+            </p>
+          </div>
+
           <div className="mt-12 pt-6 border-t border-muted/20">
             <details className="group">
               <summary className="text-xs text-muted cursor-pointer select-none hover:text-accent transition-colors uppercase tracking-wide">

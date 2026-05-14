@@ -1,22 +1,22 @@
 const BELIEFS = [
   {
-    title: 'The East Side Gets Its Share',
-    body: 'She believes the Copper Basin deserves the same attention the west side of the county gets. Every road. Every service. Every dollar.',
+    title: 'The Basin Gets Its Share',
+    body: 'The east side of Polk County deserves the same investment as the west side. Every road. Every service. Every dollar. When the budget gets cut, the Basin shouldn\'t be the first to feel it.',
     proof: 'Pushed for east-side infrastructure investment alongside the Industrial and Economic Development Board.',
   },
   {
-    title: 'A Voice in Nashville',
-    body: 'When government agencies in Nashville make decisions that affect this community, someone from this community has to be in the room pushing back.',
+    title: 'Polk County Decides for Polk County',
+    body: 'When agencies in Nashville or Washington try to make decisions for this community, someone from this community has to be in the room pushing back. Loud. Documented. On the record.',
     proof: 'Stood up to TDEC over the biosolids dumping. Made the case loud enough that a U.S. Senator started tracking it.',
   },
   {
-    title: 'Children and Seniors First',
-    body: 'Children\'s safety comes before politics. The rivers and mountains are worth protecting. Seniors deserve better than being forgotten.',
-    proof: 'Introduced the resolution to move the Boys and Girls Club off the EPA Superfund site. Volunteered at Pruitt Healthcare.',
+    title: 'Children, Seniors, and the Land',
+    body: 'Children\'s safety comes before politics. Seniors deserve better than being forgotten. And the rivers, the mountains, and the way of life here are worth protecting for the next generation.',
+    proof: 'Introduced the resolution to move the Boys and Girls Club off the EPA Superfund site. Worked in the ER through COVID. Volunteered at Pruitt Healthcare.',
   },
   {
     title: 'Show Up Every Time',
-    body: 'If you\'re going to hold this office, you\'d better show up. Not just at election time. Every meeting. Every time.',
+    body: 'If you\'re going to hold this office, you\'d better show up. Not just at election time. Not just when the cameras are on. Every meeting. Every community event. Every time.',
     proof: 'Two terms. Every commission meeting. Town halls, ribbon cuttings, swearing-ins, fire department openings.',
   },
 ] as const
@@ -28,7 +28,9 @@ export function StandsFor() {
         <p className="text-accent text-xs font-bold uppercase tracking-[0.2em] text-center mb-3">
           Where She Stands
         </p>
-        <h2 className="text-4xl md:text-5xl font-display mb-14 text-center text-accent">Four Things She Won't Back Down From</h2>
+        <h2 className="text-4xl md:text-5xl font-display mb-14 text-center text-accent">
+          Four Things She Won't Back Down From
+        </h2>
 
         <div className="grid md:grid-cols-2 gap-10 md:gap-12">
           {BELIEFS.map((b, i) => (
@@ -50,7 +52,7 @@ export function StandsFor() {
         <div data-animate className="mt-16 pt-10 border-t border-surface/20 max-w-3xl mx-auto text-center">
           <h3 className="text-2xl font-display mb-4 text-accent">Straight Talk, Always</h3>
           <p className="text-lg opacity-90 leading-relaxed mb-6">
-            She believes in being straightforward and transparent, because the people of the Copper Basin deserve to know exactly where their commissioner stands.
+            She believes in being straightforward and transparent, because the people of the Copper Basin deserve to know exactly where their commissioner stands, every single time.
           </p>
           <blockquote className="text-xl md:text-2xl font-display italic text-accent">
             "I think I keep getting elected because I am so straightforward and transparent."

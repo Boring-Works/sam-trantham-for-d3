@@ -13,9 +13,19 @@ export function Hero() {
       <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.05fr_1fr] items-center gap-0">
 
         <div data-animate className="flex flex-col justify-center px-6 lg:px-10 py-12 lg:py-20 order-2 lg:order-1">
-          <p className="text-accent text-xs md:text-sm font-bold uppercase tracking-[0.2em] mb-4">
-            Polk County District 3 · Two-Term Commissioner
-          </p>
+
+          {/* Trust signals row — party + tenure + locale */}
+          <div className="flex flex-wrap items-center gap-2 mb-5">
+            <span className="inline-flex items-center text-[10px] md:text-xs font-bold uppercase tracking-widest bg-accent text-white px-2.5 py-1">
+              Republican
+            </span>
+            <span className="inline-flex items-center text-[10px] md:text-xs font-bold uppercase tracking-widest border border-accent/60 text-accent px-2.5 py-1">
+              Two-Term Commissioner
+            </span>
+            <span className="inline-flex items-center text-[10px] md:text-xs font-bold uppercase tracking-widest border border-accent/40 text-accent/80 px-2.5 py-1">
+              Polk County · District 3
+            </span>
+          </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-display mb-4 leading-[1.05]">
             Samantha Trantham
@@ -26,7 +36,7 @@ export function Hero() {
           </p>
 
           <p className="text-lg md:text-xl max-w-xl mb-8 opacity-90 leading-relaxed">
-            She fought for two years to stop the biosolids dumping in her community. She won. Now she's running for her third term, because there's more to protect and more to build.
+            She fought for two years to stop the biosolids dumping in the Copper Basin. She won. Now she's running for her third term to keep our rivers clean, our roads paved, and our young families home.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 mb-8">
@@ -64,9 +74,8 @@ export function Hero() {
 
         {/*
          * Image panel: stacked above text on mobile + tablet (single column).
-         * On desktop (lg+), sits in the right column at native landscape aspect.
-         * The aspect-[16/10] keeps the photo at its natural framing so her full
-         * face is visible without cropping.
+         * On desktop (lg+), sits in the right column at native landscape aspect
+         * so her full face is visible without aggressive cropping.
          */}
         <div className="order-1 lg:order-2 relative lg:py-12">
           <div className="lg:border-l-4 lg:border-accent">

@@ -3,6 +3,7 @@ import { Hero } from '../components/Hero'
 import { HerStory } from '../components/HerStory'
 import { StandsFor } from '../components/StandsFor'
 import { TheFight } from '../components/TheFight'
+import { ShareCallout } from '../components/ShareCallout'
 import { WhatElse } from '../components/WhatElse'
 import { InTheNews } from '../components/InTheNews'
 import { CommunityVoices } from '../components/CommunityVoices'
@@ -22,6 +23,7 @@ function HomeComponent() {
       <HerStory />
       <StandsFor />
       <TheFight />
+      <ShareCallout />
       <WhatElse />
       <InTheNews />
       <CommunityVoices />

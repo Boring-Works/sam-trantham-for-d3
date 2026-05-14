@@ -139,12 +139,33 @@ export function Connect() {
             <div className="text-accent text-4xl font-display mb-3 leading-none">03</div>
             <h3 className="text-2xl font-display mb-3 text-accent">Donate</h3>
             <p className="text-sm opacity-90 leading-relaxed flex-grow mb-5">
-              Yard signs, mailers, and fuel for door-knocking aren't free. Every $25 pays for another stack of signs going up across the Basin.
+              Yard signs, mailers, and fuel for door-knocking aren't free. Every $25 pays for another stack of signs going up across the Basin. Mail-in checks welcome.
             </p>
             <span className="text-sm font-bold uppercase tracking-wider text-accent group-hover:underline">
               Chip In →
             </span>
           </a>
+        </div>
+
+        {/* Mail-in donation address — placeholder until treasurer confirms */}
+        <div data-animate className="bg-white border border-primary/15 p-6 md:p-8 mb-12 max-w-3xl mx-auto text-center">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent mb-2">
+            Donate by Mail
+          </p>
+          <p className="text-sm md:text-base text-text leading-relaxed">
+            Make checks payable to{' '}
+            <strong className="text-primary">Samantha Trantham for Polk County Commission District 3</strong>.
+          </p>
+          <p className="text-sm md:text-base text-text leading-relaxed mt-1">
+            Mailing address available on request — call{' '}
+            <a href="tel:+17068516623" className="text-accent font-bold hover:underline">
+              (706) 851-6623
+            </a>{' '}
+            or use the form below.
+          </p>
+          <p className="text-xs opacity-60 mt-3 leading-relaxed">
+            Tennessee campaign finance law limits individual contributions. Contributions are not tax deductible.
+          </p>
         </div>
 
         {/* Direct contact row */}
