@@ -2,11 +2,11 @@ const CURRENT_YEAR = new Date().getFullYear()
 
 const SECTION_LINKS = [
   { label: 'Her Story', href: '#story' },
-  { label: 'Her Record', href: '#record' },
+  { label: 'Where She Stands', href: '#record' },
   { label: 'The Fight', href: '#fight' },
-  { label: 'In the News', href: '#news' },
-  { label: 'What the Basin Is Saying', href: '#voices' },
-  { label: 'Connect', href: '#connect' },
+  { label: 'Press', href: '#news' },
+  { label: 'How to Vote', href: '#vote' },
+  { label: 'Get Involved', href: '#connect' },
 ]
 
 export function Footer() {

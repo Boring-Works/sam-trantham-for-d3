@@ -2,11 +2,10 @@ import { useState } from 'react'
 
 const NAV_LINKS = [
   { label: 'Her Story', href: '#story' },
-  { label: 'What She Stands For', href: '#record' },
+  { label: 'Where She Stands', href: '#record' },
   { label: 'The Fight', href: '#fight' },
-  { label: 'In the News', href: '#news' },
-  { label: 'Voices', href: '#voices' },
-  { label: 'Connect', href: '#connect' },
+  { label: 'Press', href: '#news' },
+  { label: 'How to Vote', href: '#vote' },
 ]
 
 export function Nav() {
@@ -22,18 +21,26 @@ export function Nav() {
           Trantham <span className="text-accent font-normal">·</span> District 3
         </a>
 
-        <ul className="hidden md:flex items-center space-x-6">
-          {NAV_LINKS.map(({ label, href }) => (
-            <li key={href}>
-              <a
-                href={href}
-                className="text-sm font-medium uppercase tracking-wider hover:text-accent transition-colors"
-              >
-                {label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="hidden md:flex items-center space-x-7">
+          <ul className="flex items-center space-x-6">
+            {NAV_LINKS.map(({ label, href }) => (
+              <li key={href}>
+                <a
+                  href={href}
+                  className="text-sm font-medium uppercase tracking-wider hover:text-accent transition-colors"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href="#yard-sign"
+            className="bg-accent text-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider hover:opacity-90 transition-opacity"
+          >
+            Yard Sign
+          </a>
+        </div>
 
         <button
           type="button"
@@ -61,13 +68,22 @@ export function Nav() {
               <li key={href}>
                 <a
                   href={href}
-                  className="block text-base font-medium uppercase tracking-wider py-3 border-b border-surface/10 last:border-0 hover:text-accent transition-colors"
+                  className="block text-base font-medium uppercase tracking-wider py-3 border-b border-surface/10 hover:text-accent transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   {label}
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href="#yard-sign"
+                onClick={() => setOpen(false)}
+                className="block bg-accent text-white text-center text-base font-bold uppercase tracking-wider py-3 mt-2"
+              >
+                Request a Yard Sign
+              </a>
+            </li>
           </ul>
         </div>
       )}

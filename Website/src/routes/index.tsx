@@ -6,6 +6,7 @@ import { TheFight } from '../components/TheFight'
 import { WhatElse } from '../components/WhatElse'
 import { InTheNews } from '../components/InTheNews'
 import { CommunityVoices } from '../components/CommunityVoices'
+import { VoterInfo } from '../components/VoterInfo'
 import { WhyRunning } from '../components/WhyRunning'
 import { Connect } from '../components/Connect'
 import { Footer } from '../components/Footer'
@@ -24,6 +25,7 @@ function HomeComponent() {
       <WhatElse />
       <InTheNews />
       <CommunityVoices />
+      <VoterInfo />
       <WhyRunning />
       <Connect />
       <Footer />

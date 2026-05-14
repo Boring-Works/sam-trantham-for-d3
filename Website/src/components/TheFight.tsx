@@ -1,11 +1,55 @@
+const TIMELINE = [
+  {
+    date: 'Aug 2022',
+    title: 'Trucks Arrive',
+    body: 'Treated sewage waste from Chattanooga and Cobb County, GA starts dumping in the Copper Basin. PFAS detected.',
+  },
+  {
+    date: 'Apr 2023',
+    title: 'Resolution Passes',
+    body: 'Polk County commissioners pass a resolution banning the dumping. Nashville agencies say it doesn\'t count.',
+  },
+  {
+    date: 'Jun 2023',
+    title: 'Town Hall + Hagerty',
+    body: 'Two-state town hall. U.S. Senator Bill Hagerty says publicly he\'s "tracking it closely."',
+  },
+  {
+    date: 'Apr 2024',
+    title: 'It Stops. For Good.',
+    body: 'TDEC confirms the dumping has ended. Final delivery: March 25, 2024.',
+  },
+]
 
 export function TheFight() {
   return (
     <section id="fight" className="bg-surface text-text px-6 py-20 md:py-32 relative">
-      <div className="absolute left-0 top-0 bottom-0 w-4 md:w-8 bg-accent"></div>
+      <div className="absolute left-0 top-0 bottom-0 w-4 md:w-8 bg-accent" aria-hidden="true" />
 
-      <div className="max-w-3xl mx-auto pl-8 md:pl-16">
-        <h2 className="text-4xl md:text-5xl font-display mb-10 text-primary">She Fought for Two Years. She Won.</h2>
+      <div className="max-w-4xl mx-auto pl-8 md:pl-16">
+        <p className="text-accent text-xs font-bold uppercase tracking-[0.2em] mb-3">
+          Two-Year Fight · Won
+        </p>
+        <h2 className="text-4xl md:text-5xl font-display mb-4 text-primary">She Fought for Two Years. She Won.</h2>
+        <p className="text-lg opacity-80 mb-12 max-w-2xl">
+          The biosolids fight is the clearest answer to "what does she actually do?" Here's how it played out.
+        </p>
+
+        {/* Visual timeline */}
+        <ol className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16 border-y border-primary/10 py-8">
+          {TIMELINE.map((step, i) => (
+            <li key={step.date} data-animate data-delay={String(i + 1)} className="relative">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="block w-3 h-3 rounded-full bg-accent" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-widest text-accent">
+                  {step.date}
+                </span>
+              </div>
+              <h3 className="font-display text-lg text-primary mb-2 leading-tight">{step.title}</h3>
+              <p className="text-sm leading-relaxed opacity-80">{step.body}</p>
+            </li>
+          ))}
+        </ol>
 
         <div className="space-y-6 text-lg leading-relaxed">
           <p>
