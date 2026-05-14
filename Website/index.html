@@ -34,6 +34,11 @@
     <meta name="theme-color" content="#1B3A2A">
     <meta name="color-scheme" content="light">
     <meta name="mobile-web-app-capable" content="yes">
+    <script>
+      /* Set .js-anim on <html> synchronously so scroll-reveal CSS only applies when
+         JS is alive. No-JS / slow JS / crawlers see content immediately. */
+      document.documentElement.classList.add('js-anim');
+    </script>
     <link rel="preload" as="image" href="/samantha-trantham.webp" type="image/webp" fetchpriority="high">
     <script type="application/ld+json">
     {

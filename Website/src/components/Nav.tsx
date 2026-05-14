@@ -21,13 +21,13 @@ export function Nav() {
           Trantham <span className="text-accent font-normal">·</span> District 3
         </a>
 
-        <div className="hidden md:flex items-center space-x-7">
+        <div className="hidden lg:flex items-center space-x-7">
           <ul className="flex items-center space-x-6">
             {NAV_LINKS.map(({ label, href }) => (
               <li key={href}>
                 <a
                   href={href}
-                  className="text-sm font-medium uppercase tracking-wider hover:text-accent transition-colors"
+                  className="text-sm font-medium uppercase tracking-wider hover:text-accent transition-colors whitespace-nowrap"
                 >
                   {label}
                 </a>
@@ -36,7 +36,7 @@ export function Nav() {
           </ul>
           <a
             href="#yard-sign"
-            className="bg-accent text-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider hover:opacity-90 transition-opacity"
+            className="bg-accent text-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider hover:opacity-90 transition-opacity whitespace-nowrap"
           >
             Yard Sign
           </a>
@@ -44,7 +44,7 @@ export function Nav() {
 
         <button
           type="button"
-          className="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 flex-shrink-0"
+          className="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 flex-shrink-0"
           onClick={() => setOpen((o) => !o)}
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
@@ -62,7 +62,7 @@ export function Nav() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-surface/20 bg-primary">
+        <div className="lg:hidden border-t border-surface/20 bg-primary">
           <ul className="px-6 py-4 space-y-1">
             {NAV_LINKS.map(({ label, href }) => (
               <li key={href}>

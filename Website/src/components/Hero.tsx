@@ -10,9 +10,9 @@ export function Hero() {
 
   return (
     <section className="bg-primary text-surface relative overflow-hidden">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 min-h-[85vh]">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.05fr_1fr] items-center gap-0">
 
-        <div data-animate className="flex flex-col justify-center px-6 md:px-10 py-14 md:py-20 order-2 md:order-1">
+        <div data-animate className="flex flex-col justify-center px-6 lg:px-10 py-12 lg:py-20 order-2 lg:order-1">
           <p className="text-accent text-xs md:text-sm font-bold uppercase tracking-[0.2em] mb-4">
             Polk County District 3 · Two-Term Commissioner
           </p>
@@ -25,7 +25,7 @@ export function Hero() {
             "A Voice for the Copper Basin."
           </p>
 
-          <p className="text-lg md:text-xl max-w-md mb-8 opacity-90 leading-relaxed">
+          <p className="text-lg md:text-xl max-w-xl mb-8 opacity-90 leading-relaxed">
             She fought for two years to stop the biosolids dumping in her community. She won. Now she's running for her third term, because there's more to protect and more to build.
           </p>
 
@@ -44,7 +44,7 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="flex items-center gap-4 pt-6 border-t border-surface/15">
+          <div className="flex items-center gap-4 pt-6 border-t border-surface/15 max-w-md">
             <div className="text-center">
               <p className="text-4xl md:text-5xl font-display font-bold text-accent leading-none">
                 {days}
@@ -62,20 +62,27 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="order-1 md:order-2 relative min-h-[56vw] md:min-h-0">
-          <picture>
-            <source srcSet="/samantha-trantham.webp" type="image/webp" />
-            <img
-              src="/samantha-trantham.jpg"
-              alt="Samantha Trantham, Polk County District 3 Commissioner"
-              className="absolute inset-0 w-full h-full object-cover object-[center_20%]"
-              width={1080}
-              height={675}
-              loading="eager"
-              fetchPriority="high"
-            />
-          </picture>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-transparent to-transparent md:from-primary/30" aria-hidden="true" />
+        {/*
+         * Image panel: stacked above text on mobile + tablet (single column).
+         * On desktop (lg+), sits in the right column at native landscape aspect.
+         * The aspect-[16/10] keeps the photo at its natural framing so her full
+         * face is visible without cropping.
+         */}
+        <div className="order-1 lg:order-2 relative lg:py-12">
+          <div className="lg:border-l-4 lg:border-accent">
+            <picture>
+              <source srcSet="/samantha-trantham.webp" type="image/webp" />
+              <img
+                src="/samantha-trantham.jpg"
+                alt="Samantha Trantham, Polk County District 3 Commissioner"
+                className="w-full h-auto object-cover object-center"
+                width={1080}
+                height={675}
+                loading="eager"
+                fetchPriority="high"
+              />
+            </picture>
+          </div>
         </div>
 
       </div>

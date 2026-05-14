@@ -33,7 +33,8 @@ body {
   padding-bottom: 4rem;
 }
 
-@media (min-width: 768px) {
+/* MobileCTA bar shows below lg (1024); pad body to clear it on those sizes */
+@media (min-width: 1024px) {
   body {
     padding-bottom: 0;
   }
@@ -43,37 +44,34 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
 }
 
-/* Scroll reveal animation system */
-[data-animate] {
-  opacity: 0;
-  translate: 0 1.5rem;
-  transition: opacity 0.6s ease, translate 0.6s ease;
+/*
+ * Scroll reveal: purely additive. Elements are ALWAYS visible by default.
+ * The animation just adds a subtle slide-up when an element enters the
+ * viewport (if JS is alive and motion is allowed). This means:
+ *  - No-JS / crawlers / social unfurlers / archive bots see content
+ *  - Full-page screenshots show content
+ *  - Reduced-motion users see no animation, content visible
+ *  - With JS + motion, users get a soft slide-up on scroll
+ */
+.js-anim [data-animate] {
+  translate: 0 0.75rem;
+  transition: translate 0.5s ease;
 }
 
-[data-animate].in-view {
-  opacity: 1;
+.js-anim [data-animate].in-view {
   translate: 0 0;
 }
 
-/* Staggered delay variants */
-[data-animate][data-delay="1"] { transition-delay: 0.1s; }
-[data-animate][data-delay="2"] { transition-delay: 0.2s; }
-[data-animate][data-delay="3"] { transition-delay: 0.3s; }
-[data-animate][data-delay="4"] { transition-delay: 0.4s; }
+.js-anim [data-animate][data-delay="1"] { transition-delay: 0.06s; }
+.js-anim [data-animate][data-delay="2"] { transition-delay: 0.12s; }
+.js-anim [data-animate][data-delay="3"] { transition-delay: 0.18s; }
+.js-anim [data-animate][data-delay="4"] { transition-delay: 0.24s; }
 
 @media (prefers-reduced-motion: reduce) {
-  [data-animate] {
-    opacity: 1;
+  .js-anim [data-animate] {
     translate: 0 0;
     transition: none;
-    transition-delay: 0s;
   }
-}
-
-/* Performance: defer rendering of off-screen sections (exclude first/hero) */
-section + section {
-  content-visibility: auto;
-  contain-intrinsic-size: 0 600px;
 }
 
 /* Skip link for keyboard/screen reader navigation */
