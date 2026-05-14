@@ -11,7 +11,7 @@ const ACCOMPLISHMENTS: Accomplishment[] = [
   {
     date: 'Jun 2024',
     title: 'Protected the Basin\'s Children',
-    body: 'After the biosolids fight, officials proposed relocating the Boys and Girls Club to a 16-acre site next to Copperhill Industries — inside the EPA Copper Basin Mining District Superfund site. The buildings had asbestos and lead paint. Samantha looked at the EPA data herself and introduced a resolution to find a safer location.',
+    body: 'After the biosolids fight, officials proposed relocating the Boys and Girls Club to a 16-acre site next to Copperhill Industries, inside the EPA Copper Basin Mining District Superfund site. The buildings had asbestos and lead paint. Samantha looked at the EPA data herself and introduced a resolution to find a safer location.',
     quote: '"There are plenty of alternatives that do not have any of these factors, which should be automatically disqualifying."',
     outcome: 'Resolution introduced. Alternative sites considered.',
     matters: 'The kids in this program will get a building that isn\'t sitting on contaminated ground.',

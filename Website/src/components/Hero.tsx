@@ -36,7 +36,7 @@ export function Hero() {
           </p>
 
           <p className="text-lg md:text-xl max-w-xl mb-8 opacity-90 leading-relaxed">
-            She fought for two years to stop the biosolids dumping in the Copper Basin. She won. In November 2025 the dumping resumed under a new state classification — and she warned in 2024 that this exact thing could happen. She's running for a third term to finish the fight.
+            She fought for two years to stop the biosolids dumping in the Copper Basin. She won. In November 2025 the dumping resumed under a new state classification. She warned in 2024 this exact thing could happen. She's running for a third term to finish the fight.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 mb-8">

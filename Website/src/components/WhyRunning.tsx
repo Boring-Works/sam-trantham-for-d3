@@ -7,7 +7,7 @@ const THIRD_TERM_PRIORITIES = [
   {
     label: 'Economy',
     title: 'Protect the Tourism Economy',
-    body: 'The Ocoee is the most rafted river in America. 250,000 visitors a year keep Basin businesses open. Clean water and clean air are not optional — they are the entire economy.',
+    body: 'The Ocoee is the most rafted river in America. 250,000 visitors a year keep Basin businesses open. Clean water and clean air are not optional. They are the entire economy.',
   },
   {
     label: 'Seniors & Families',
@@ -33,7 +33,7 @@ export function WhyRunning() {
             The Copper Basin sits on the other side of a mountain gorge from the county seat. When decisions get made in Benton, we feel it last and get the least. If we don't have a commissioner who shows up and speaks up, we get forgotten. That's just how it is.
           </p>
           <p>
-            I've spent two terms making sure that doesn't happen. The biosolids fight isn't over — it restarted in November 2025. Here's what I'm asking for a third term to finish.
+            I've spent two terms making sure that doesn't happen. The biosolids fight isn't over. It restarted in November 2025. Here's what I'm asking for a third term to finish.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export function WhyRunning() {
             href="#yard-sign"
             className="flex-1 bg-accent text-white px-6 py-4 text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-opacity text-center"
           >
-            Stand With Samantha — Request a Yard Sign
+            Stand With Samantha · Request a Yard Sign
           </a>
           <a
             href="#vote"

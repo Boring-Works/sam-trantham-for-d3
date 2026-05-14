@@ -1,6 +1,6 @@
 const STATS = [
   { number: '250K', label: 'River Visitors a Year', detail: 'The Ocoee is the most rafted river in America. Tourism is the Basin\'s livelihood.' },
-  { number: '83%', label: 'For Trump in 2024', detail: 'Polk County, TN — a deeply conservative district she has won twice.' },
+  { number: '83%', label: 'For Trump in 2024', detail: 'Polk County, TN. A deeply conservative district she has won twice.' },
   { number: '22%', label: 'Of Polk County is 65+', detail: 'Seniors built this place. Sam shows up at the Senior Center.' },
   { number: '2', label: 'Terms Elected', detail: '2018 and 2022. Both won outright by a community that knows her.' },
 ]

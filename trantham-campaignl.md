@@ -1,5 +1,38 @@
 # Claude Code: Samantha Trantham Campaign Website
-## Complete Content, Strategy, and Narrative — v3 (Final)
+## Complete Content, Strategy, and Narrative — v3 (March 2026) + v4 update (May 2026)
+
+> **v4 UPDATE (May 14, 2026):** The deployed site at https://sam-trantham-campaign.codyboring.workers.dev has been rewritten to reflect a new finding from independent research: **the biosolids dumping at Copperhill Industries resumed in late November 2025** under a new TDEC "Exceptional Quality" classification (confirmed on the official tn.gov Copper Basin Mining District remediation page).
+>
+> The "she fought, she won" past-tense frame is now a **round-two** frame: she won round one, she warned in April 2024 that the agreement was fragile (using the words "unequivocal and permanent" on purpose), the dumping restarted 19 months later, and she is fighting again.
+>
+> **Specific copy changes shipped:**
+> - Hero body now acknowledges the Nov 2025 restart and reframes the third-term ask as "finish the fight."
+> - Republican / Two-Term Commissioner / Polk County · District 3 pill row added to hero (was missing the party signal).
+> - TheFight section retitled: "She Fought for Two Years. She Won. Now They're Back." Timeline grew from 4 to 5 steps (added Nov 2025 "Round Two — They're Back" with a pulsing dot). Sam's prophetic April 2024 quote is featured as a callout.
+> - WhyRunning third-term priorities reordered to: 01 Finish the Biosolids Fight · 02 Protect Tourism Economy · 03 Take Care of Seniors. (Original v3 plan had infrastructure first; biosolids round two is now the top priority.)
+> - WhatElse expanded from 4 to 6 accomplishment cards: added "Brought Fiber to the Basin" (the $2M ETC Last Mile broadband grant covering 161 unserved Polk County locations) and "Showed Up for Seniors" (Pruitt Healthcare, Senior Center, 22% senior demographic explicitly cited).
+> - CommunityVoices stats now anchored in real district data: 250K river visitors · 83% for Trump 2024 · 22% over 65 · 2 terms elected. Subtitle reframed to "A deeply conservative rural district. A tourism-driven economy. A senior population that built this place."
+> - New `ShareCallout.tsx` component added between TheFight and WhatElse — copper accent band with Facebook / Twitter / SMS / Native Share API. Pitched as "the single highest-leverage thing you can do this week."
+> - Connect section added a Donate-by-Mail card ("Make checks payable to Samantha Trantham for Polk County Commission District 3" plus phone fallback for treasurer address) with a TN campaign-finance footnote.
+> - Voter information section now wires real Polk County Election Commission contact info: (423) 338-4531 · 6050 Hwy 411, Benton, TN 37307 · polk.commission@tn.gov · M–F 8:30 a.m.–4:30 p.m.
+>
+> **Counter-narrative implication:** The 2025 Governor's Environmental Stewardship Award to Copperhill Industries (noted in v3 strategy below) is now a stronger counter for the campaign — TDEC handed an award to the same site whose biosolids operation restarted weeks later under a friendlier classification. Use this for press/op-ed framing.
+>
+> **What stayed exactly the same from v3:**
+> - Voice guide (sections 1–7 third person; sections 8–9 first person)
+> - HerStory copy (with one new subhead surfacing the ER/COVID/Pruitt nurse fact early)
+> - Visual identity (Forest Green primary + Burnished Copper accent + Cream surface)
+> - Election logistics (Aug 6, 2026 Republican Primary; early voting July 17 – Aug 1)
+>
+> **Open campaign-team items (unchanged from v3 list at bottom):**
+> 1. Real named testimonials for the From-the-Basin scaffold in CommunityVoices
+> 2. Treasurer mailing address for the Donate-by-Mail card
+> 3. Outdoor photo to replace the CSCC Spotlight headshot in the hero
+> 4. Sam's sign-off on the three third-term priorities as reordered
+> 5. Confirmation of the Sept 2020 chairmanship claim (still unsourced; not on the live site)
+> 6. votetrantham.com DNS to point at the Worker
+>
+> The v3 strategy doc below is the historical foundation. Anything that conflicts with this v4 update is superseded by the deployed site.
 
 ---
 

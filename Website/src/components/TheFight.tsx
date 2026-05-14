@@ -16,12 +16,12 @@ const TIMELINE = [
   },
   {
     date: 'Apr 2024',
-    title: 'Round One — Stopped',
+    title: 'Round One · Stopped',
     body: 'TDEC confirms the dumping has ended. Final delivery: March 25, 2024. TDEC cites pH violations.',
   },
   {
     date: 'Nov 2025',
-    title: 'Round Two — They\'re Back',
+    title: 'Round Two · They\'re Back',
     body: 'Biosolids dumping resumes at the same Copperhill site under a new TDEC classification. The smell returns. So does Samantha.',
     isCurrent: true,
   },
@@ -40,7 +40,7 @@ export function TheFight() {
           She Fought for Two Years. She Won. Now They're Back.
         </h2>
         <p className="text-lg opacity-80 mb-12 max-w-2xl">
-          The biosolids fight is the clearest answer to "what does she actually do?" Here's how round one played out — and what happened next.
+          The biosolids fight is the clearest answer to "what does she actually do?" Here's how round one played out, and what happened next.
         </p>
 
         {/* Visual timeline — 5 steps including the November 2025 restart */}
@@ -96,7 +96,7 @@ export function TheFight() {
           <blockquote className="border-l-4 border-accent pl-6 py-2 my-8 text-xl font-display text-primary italic">
             "Our community is awaiting transparency from TDEC and the company owner, Byron 'Buddy' Haynes, verifying the unequivocal and permanent stoppage of transportation and biosolids application on the Intertrade Holdings/Copperhill Industries site."
             <footer className="not-italic font-body text-sm text-accent uppercase tracking-wide mt-3 opacity-90">
-              — Samantha Trantham, April 2024
+              Samantha Trantham · April 2024
             </footer>
           </blockquote>
 
@@ -109,7 +109,7 @@ export function TheFight() {
           </p>
 
           <p>
-            This time the state has reclassified the same biosolids as "Exceptional Quality" — exempt from the rules that worked the last time. The smell is back. The trucks are back. The route Samantha and her neighbors fought for two years to close has been reopened.
+            This time the state has reclassified the same biosolids as "Exceptional Quality," exempt from the rules that worked the last time. The smell is back. The trucks are back. The route Samantha and her neighbors fought for two years to close has been reopened.
           </p>
 
           <p className="text-xl font-display text-primary border-t border-primary/10 pt-6">
@@ -122,7 +122,7 @@ export function TheFight() {
               Why This Matters Right Now
             </p>
             <p className="text-base md:text-lg leading-relaxed text-primary">
-              PFAS doesn't break down. It gets into groundwater, livestock, and the food your grandkids eat. The Ocoee and Hiwassee bring 250,000+ visitors a year to the Basin — the river economy is what keeps your neighbors employed. If the smell drives tourists away, the rafting outfitters, restaurants, gas stations, and motels all feel it. This isn't an abstract environmental fight. It's about whether Polk County families still have a place to work next year.
+              PFAS doesn't break down. It gets into groundwater, livestock, and the food your grandkids eat. The Ocoee and Hiwassee bring 250,000+ visitors a year to the Basin. The river economy is what keeps your neighbors employed. If the smell drives tourists away, the rafting outfitters, restaurants, gas stations, and motels all feel it. This isn't an abstract environmental fight. It's about whether Polk County families still have a place to work next year.
             </p>
           </div>
 

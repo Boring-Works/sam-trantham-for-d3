@@ -1,6 +1,6 @@
 function buildShareUrl(network: 'facebook' | 'twitter' | 'sms'): string {
   const url = typeof window !== 'undefined' ? window.location.origin || 'https://votetrantham.com' : 'https://votetrantham.com'
-  const text = 'She fought for two years to stop the biosolids dumping in the Copper Basin. She won. Vote Samantha Trantham, Polk County District 3 — August 6 Republican Primary.'
+  const text = 'She fought for two years to stop the biosolids dumping in the Copper Basin. She won. Vote Samantha Trantham, Polk County District 3, August 6 Republican Primary.'
   const enc = encodeURIComponent
   if (network === 'facebook') return `https://www.facebook.com/sharer/sharer.php?u=${enc(url)}`
   if (network === 'twitter') return `https://twitter.com/intent/tweet?text=${enc(text)}&url=${enc(url)}`
@@ -12,7 +12,7 @@ function handleNativeShare(e: React.MouseEvent<HTMLButtonElement>) {
   if (typeof navigator !== 'undefined' && navigator.share) {
     e.preventDefault()
     navigator.share({
-      title: 'Samantha Trantham — A Voice for the Copper Basin',
+      title: 'Samantha Trantham, A Voice for the Copper Basin',
       text: 'She fought two years to stop the biosolids dumping. She won. Vote Samantha Trantham, Polk County District 3, August 6 Primary.',
       url: window.location.href,
     }).catch(() => { /* dismissed */ })

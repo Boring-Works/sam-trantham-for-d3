@@ -99,13 +99,13 @@ Design system colors already match. Fonts already match. The migration is mechan
 
 ## Planned D Sites
 
-| Site | Client | Timeline |
-|---|---|---|
-| Joyce Crosswhite campaign | Holston Partners | Before Aug 2026 primary |
-| Samantha Trantham campaign | Holston Partners | TBD |
-| BoringWorks.com | Internal | Q2 2026 |
-| privatebrain.org | Internal | Q2 2026 |
-| Future HP campaign clients | Holston Partners | On-demand |
+| Site | Client | Timeline | Status |
+|---|---|---|---|
+| Joyce Crosswhite campaign | Holston Partners | Before Aug 2026 primary | Planned |
+| Samantha Trantham campaign | Holston Partners | Shipped May 2026 | **Live as TanStack Start exception** — `sam-trantham-campaign` Worker. Pre-dates Expo D template. Not a candidate for migration since the primary is Aug 6, 2026. |
+| BoringWorks.com | Internal | Q2 2026 | Planned |
+| privatebrain.org | Internal | Q2 2026 | Planned |
+| Future HP campaign clients | Holston Partners | On-demand | Use Expo D template |
 
 ## Shared Forms Worker
 

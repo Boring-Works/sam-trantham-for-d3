@@ -157,7 +157,7 @@ export function Connect() {
             <strong className="text-primary">Samantha Trantham for Polk County Commission District 3</strong>.
           </p>
           <p className="text-sm md:text-base text-text leading-relaxed mt-1">
-            Mailing address available on request — call{' '}
+            Mailing address available on request. Call{' '}
             <a href="tel:+17068516623" className="text-accent font-bold hover:underline">
               (706) 851-6623
             </a>{' '}
