@@ -1,3 +1,9 @@
 name = "sam-trantham-campaign"
 compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
+
+# SPA fallback: serve index.html for any path the static asset server can't match.
+# Without this, deep links like /story or /vote return 404 instead of letting
+# the TanStack Router 404 component render.
+[assets]
+not_found_handling = "single-page-application"
