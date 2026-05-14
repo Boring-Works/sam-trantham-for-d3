@@ -63,15 +63,18 @@ export function Hero() {
         </div>
 
         <div className="order-1 md:order-2 relative min-h-[56vw] md:min-h-0">
-          <img
-            src="/samantha-trantham.jpg"
-            alt="Samantha Trantham, Polk County District 3 Commissioner"
-            className="absolute inset-0 w-full h-full object-cover object-[center_20%]"
-            width={1080}
-            height={675}
-            loading="eager"
-            fetchPriority="high"
-          />
+          <picture>
+            <source srcSet="/samantha-trantham.webp" type="image/webp" />
+            <img
+              src="/samantha-trantham.jpg"
+              alt="Samantha Trantham, Polk County District 3 Commissioner"
+              className="absolute inset-0 w-full h-full object-cover object-[center_20%]"
+              width={1080}
+              height={675}
+              loading="eager"
+              fetchPriority="high"
+            />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-transparent to-transparent md:from-primary/30" aria-hidden="true" />
         </div>
 
