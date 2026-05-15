@@ -1,5 +1,6 @@
-# Claude Code: Samantha Trantham Campaign Website
-## Complete Content, Strategy, and Narrative — v3 (March 2026) + v4 update (May 2026)
+# Samantha Trantham Campaign — Content & Narrative Strategy
+
+Version 3 (March 2026) with v4 update (May 2026).
 
 > **v4 UPDATE (May 14, 2026):** The deployed site at https://sam-trantham-campaign.codyboring.workers.dev has been rewritten to reflect a new finding from independent research: **the biosolids dumping at Copperhill Industries resumed in late November 2025** under a new TDEC "Exceptional Quality" classification (confirmed on the official tn.gov Copper Basin Mining District remediation page).
 >

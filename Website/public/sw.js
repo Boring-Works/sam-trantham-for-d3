@@ -1,9 +1,8 @@
-const CACHE_VERSION = 'trantham-v1'
+const CACHE_VERSION = 'trantham-v2'
 const STATIC_CACHE = `static-${CACHE_VERSION}`
 const RUNTIME_CACHE = `runtime-${CACHE_VERSION}`
 
-const STATIC_ASSETS_EXTS = ['.js', '.css', '.ico', '.png', '.svg', '.woff2']
-const CLEVELAND_ORIGIN = 'https://www.clevelandstatecc.edu'
+const STATIC_ASSETS_EXTS = ['.js', '.css', '.ico', '.png', '.svg', '.webp', '.woff2']
 const GOOGLE_FONTS_ORIGINS = ['https://fonts.googleapis.com', 'https://fonts.gstatic.com']
 
 self.addEventListener('install', (event) => {
@@ -28,18 +27,11 @@ self.addEventListener('fetch', (event) => {
   const { request } = event
   const url = new URL(request.url)
 
-  // Skip non-GET requests
   if (request.method !== 'GET') return
 
   // Google Fonts: stale-while-revalidate
   if (GOOGLE_FONTS_ORIGINS.includes(url.origin)) {
     event.respondWith(staleWhileRevalidate(request, RUNTIME_CACHE))
-    return
-  }
-
-  // Cleveland State CC images: cache-first
-  if (url.origin === CLEVELAND_ORIGIN) {
-    event.respondWith(cacheFirst(request, RUNTIME_CACHE))
     return
   }
 

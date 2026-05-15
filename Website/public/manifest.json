@@ -1,5 +1,5 @@
 {
-  "name": "Samantha Trantham — District 3 Commissioner",
+  "name": "Samantha Trantham, District 3 Commissioner",
   "short_name": "Trantham D3",
   "description": "She fought for two years to stop the biosolids dumping in the Copper Basin. She won. Running for her third term as Polk County District 3 Commissioner.",
   "start_url": "/?source=pwa",
@@ -14,10 +14,10 @@
   "categories": ["government", "politics"],
   "prefer_related_applications": false,
   "icons": [
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
     { "src": "/logo192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
     { "src": "/logo512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "/logo512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
-    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+    { "src": "/logo512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ],
   "shortcuts": [
     {
@@ -30,7 +30,7 @@
   ],
   "screenshots": [
     {
-      "src": "https://www.clevelandstatecc.edu/wp-content/uploads/2026/02/Samantha-Trantham-1080x675.jpg",
+      "src": "/samantha-trantham.jpg",
       "sizes": "1080x675",
       "type": "image/jpeg",
       "form_factor": "wide",
